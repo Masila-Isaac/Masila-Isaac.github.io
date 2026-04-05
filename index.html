@@ -1,0 +1,2007 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Isaac Masila | Data Scientist & Full-Stack Developer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Isaac Masila – Data Scientist, ML Engineer & Full-Stack Developer based in Kenya."
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      :root {
+        --primary: #00f0ff;
+        --bg-dark: #0a0e1a;
+        --bg-card: #0f1628;
+        --text-main: #e2e8f0;
+        --text-muted: #8892a4;
+        --accent: #7c3aed;
+        --border: rgba(0, 240, 255, 0.12);
+        --glow: 0 0 30px rgba(0, 240, 255, 0.15);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: var(--bg-dark);
+        color: var(--text-main);
+        font-family: "DM Sans", sans-serif;
+        overflow-x: hidden;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Syne", sans-serif;
+      }
+
+      /* NAVBAR */
+      .ftco_navbar {
+        background: rgba(10, 14, 26, 0.95) !important;
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border);
+        padding: 14px 0;
+      }
+      .navbar-brand {
+        font-family: "Syne", sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: var(--primary) !important;
+        letter-spacing: -1px;
+      }
+      .ftco_navbar .nav-link {
+        color: var(--text-muted) !important;
+        font-weight: 500;
+        font-size: 0.88rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: color 0.2s;
+        padding: 6px 14px !important;
+      }
+      .ftco_navbar .nav-link:hover,
+      .ftco_navbar .nav-link.active {
+        color: var(--primary) !important;
+      }
+
+      /* HERO */
+      #home-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: var(--bg-dark);
+        position: relative;
+        overflow: hidden;
+        padding-top: 80px;
+      }
+      .hero-grid {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .hero-glow1 {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(0, 240, 255, 0.07) 0%,
+          transparent 70%
+        );
+        top: -100px;
+        right: -100px;
+        pointer-events: none;
+      }
+      .hero-glow2 {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(124, 58, 237, 0.07) 0%,
+          transparent 70%
+        );
+        bottom: 0;
+        left: -100px;
+        pointer-events: none;
+      }
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(0, 240, 255, 0.08);
+        border: 1px solid rgba(0, 240, 255, 0.2);
+        border-radius: 50px;
+        padding: 6px 16px;
+        font-size: 0.8rem;
+        color: var(--primary);
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .hero-tag::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        background: var(--primary);
+        border-radius: 50%;
+        animation: blink 1.5s infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+        }
+      }
+      .hero-name {
+        font-family: "Syne", sans-serif;
+        font-size: clamp(2.8rem, 5vw, 4.2rem);
+        font-weight: 800;
+        line-height: 1.05;
+        color: #fff;
+        margin-bottom: 12px;
+      }
+      .hero-name span {
+        color: var(--primary);
+      }
+      .hero-roles {
+        font-size: 1.1rem;
+        color: var(--text-muted);
+        margin-bottom: 22px;
+        line-height: 1.6;
+      }
+      .hero-roles strong {
+        color: var(--text-main);
+        font-weight: 500;
+      }
+      .hero-desc {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+        max-width: 480px;
+        margin-bottom: 36px;
+      }
+      .hero-btns {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .btn-glow {
+        background: var(--primary);
+        color: #0a0e1a !important;
+        font-family: "Syne", sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 13px 32px;
+        border-radius: 8px;
+        border: none;
+        text-decoration: none !important;
+        letter-spacing: 0.5px;
+        transition: all 0.3s;
+        box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+        display: inline-block;
+      }
+      .btn-glow:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 35px rgba(0, 240, 255, 0.5);
+      }
+      .btn-outline-glow {
+        background: transparent;
+        color: var(--primary) !important;
+        font-family: "Syne", sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 12px 32px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 240, 255, 0.4);
+        text-decoration: none !important;
+        letter-spacing: 0.5px;
+        transition: all 0.3s;
+        display: inline-block;
+      }
+      .btn-outline-glow:hover {
+        background: rgba(0, 240, 255, 0.07);
+        border-color: var(--primary);
+        transform: translateY(-2px);
+      }
+
+      /* HERO IMAGE */
+      .hero-img-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-ring {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 240, 255, 0.2);
+        padding: 8px;
+        position: relative;
+        animation: spin 12s linear infinite;
+      }
+      .hero-ring::before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        background: var(--primary);
+        border-radius: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 15px var(--primary);
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .hero-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-image: url(images/Mine.JPG);
+        background-size: cover;
+        background-position: center top;
+        border: 3px solid var(--bg-dark);
+        animation: spin 12s linear infinite reverse;
+      }
+
+      /* STATS */
+      .stats-bar {
+        background: var(--bg-card);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        padding: 40px 0;
+      }
+      .stats-inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        text-align: center;
+      }
+      .stat-num {
+        font-family: "Syne", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 800;
+        color: var(--primary);
+        line-height: 1;
+      }
+      .stat-lbl {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 6px;
+      }
+
+      /* SECTIONS */
+      .sec {
+        padding: 90px 0;
+      }
+      .sec-alt {
+        padding: 90px 0;
+        background: #070a14;
+      }
+      .sec-head {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .eyebrow {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--primary);
+        margin-bottom: 12px;
+      }
+      .sec-head h2 {
+        font-family: "Syne", sans-serif;
+        font-size: clamp(2rem, 3.5vw, 2.8rem);
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 0;
+      }
+
+      /* ABOUT */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .about-img-wrap {
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        position: relative;
+      }
+      .about-img-wrap img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+      }
+      .about-badge {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background: rgba(10, 14, 26, 0.9);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 12px 18px;
+        backdrop-filter: blur(10px);
+      }
+      .about-badge .n {
+        font-family: "Syne", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--primary);
+        line-height: 1;
+      }
+      .about-badge .l {
+        font-size: 0.75rem;
+        color: var(--text-muted);
+      }
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin: 28px 0;
+      }
+      .info-item {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 14px 16px;
+      }
+      .info-item .k {
+        font-size: 0.72rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+      }
+      .info-item .v {
+        font-size: 0.9rem;
+        color: var(--text-main);
+        font-weight: 500;
+      }
+      .about-text {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.8;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .tag {
+        background: rgba(0, 240, 255, 0.06);
+        border: 1px solid rgba(0, 240, 255, 0.15);
+        color: var(--text-muted);
+        border-radius: 6px;
+        padding: 5px 12px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        transition: all 0.2s;
+      }
+      .tag:hover {
+        background: rgba(0, 240, 255, 0.12);
+        color: var(--primary);
+        border-color: rgba(0, 240, 255, 0.3);
+      }
+
+      /* SKILLS */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+      }
+      .skill-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px;
+        transition: all 0.3s;
+      }
+      .skill-card:hover {
+        border-color: rgba(0, 240, 255, 0.35);
+        transform: translateY(-3px);
+        box-shadow: var(--glow);
+      }
+      .skill-name {
+        font-weight: 600;
+        font-size: 0.92rem;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .skill-pct {
+        color: var(--primary);
+        font-family: "Syne", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+      .skill-bar {
+        height: 5px;
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .skill-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+        border-radius: 10px;
+      }
+
+      /* PROJECTS */
+      .proj-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 24px;
+      }
+      .proj-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+      .proj-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .proj-card:hover {
+        border-color: rgba(0, 240, 255, 0.3);
+        transform: translateY(-5px);
+        box-shadow:
+          0 20px 50px rgba(0, 0, 0, 0.4),
+          var(--glow);
+      }
+      .proj-card:hover::before {
+        opacity: 1;
+      }
+      .proj-ico {
+        width: 48px;
+        height: 48px;
+        background: rgba(0, 240, 255, 0.08);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+        font-size: 1.3rem;
+      }
+      .proj-title {
+        font-family: "Syne", sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      .proj-desc {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin-bottom: 16px;
+      }
+      .proj-impact {
+        display: inline-block;
+        background: rgba(0, 240, 255, 0.08);
+        border: 1px solid rgba(0, 240, 255, 0.15);
+        color: var(--primary);
+        font-size: 0.78rem;
+        font-weight: 600;
+        padding: 4px 10px;
+        border-radius: 6px;
+        margin-bottom: 16px;
+      }
+      .stack-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 20px;
+      }
+      .stack-tag {
+        background: rgba(124, 58, 237, 0.1);
+        border: 1px solid rgba(124, 58, 237, 0.2);
+        color: #a78bfa;
+        font-size: 0.75rem;
+        padding: 3px 9px;
+        border-radius: 5px;
+      }
+      .proj-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--primary);
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: gap 0.2s;
+      }
+      .proj-link:hover {
+        color: var(--primary);
+        gap: 10px;
+        text-decoration: none;
+      }
+
+      /* CERTS */
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+      }
+      .cert-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 22px;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        transition: all 0.3s;
+      }
+      .cert-card:hover {
+        border-color: rgba(0, 240, 255, 0.3);
+        transform: translateY(-2px);
+        box-shadow: var(--glow);
+      }
+      .cert-ico {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        background: rgba(0, 240, 255, 0.08);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+      }
+      .cert-name {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: var(--text-main);
+        margin-bottom: 4px;
+      }
+      .cert-by {
+        font-size: 0.78rem;
+        color: var(--primary);
+      }
+
+      /* TIMELINE */
+      .timeline {
+        position: relative;
+        padding-left: 30px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: var(--border);
+      }
+      .tl-item {
+        position: relative;
+        margin-bottom: 36px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+      .tl-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      .tl-dot {
+        position: absolute;
+        left: -34px;
+        top: 4px;
+        width: 10px;
+        height: 10px;
+        background: var(--primary);
+        border-radius: 50%;
+        box-shadow: 0 0 10px var(--primary);
+      }
+      .tl-date {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--primary);
+        background: rgba(0, 240, 255, 0.08);
+        border: 1px solid rgba(0, 240, 255, 0.15);
+        border-radius: 5px;
+        padding: 3px 10px;
+        margin-bottom: 10px;
+      }
+      .tl-title {
+        font-family: "Syne", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #fff;
+        margin-bottom: 4px;
+      }
+      .tl-inst {
+        font-size: 0.85rem;
+        color: var(--primary);
+        margin-bottom: 10px;
+      }
+      .tl-desc {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+      }
+
+      /* SERVICES */
+      .svc-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+      .svc-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 28px 24px;
+        text-align: center;
+        transition: all 0.3s;
+      }
+      .svc-card:hover {
+        border-color: rgba(0, 240, 255, 0.3);
+        transform: translateY(-4px);
+        box-shadow: var(--glow);
+      }
+      .svc-ico {
+        width: 60px;
+        height: 60px;
+        background: rgba(0, 240, 255, 0.07);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        font-size: 1.6rem;
+      }
+      .svc-title {
+        font-family: "Syne", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      .svc-desc {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+      }
+
+      /* CONTACT */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 50px;
+      }
+      .contact-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 22px;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        transition: all 0.3s;
+        margin-bottom: 14px;
+      }
+      .contact-card:hover {
+        border-color: rgba(0, 240, 255, 0.3);
+        box-shadow: var(--glow);
+      }
+      .contact-ico {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        background: rgba(0, 240, 255, 0.08);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        color: var(--primary);
+      }
+      .contact-lbl {
+        font-size: 0.73rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+      }
+      .contact-val {
+        font-size: 0.92rem;
+        color: var(--text-main);
+        font-weight: 500;
+      }
+      .contact-val a {
+        color: var(--text-main);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .contact-val a:hover {
+        color: var(--primary);
+      }
+      .cf-wrap {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 36px;
+      }
+      .cf-input {
+        background: rgba(255, 255, 255, 0.04) !important;
+        border: 1px solid var(--border) !important;
+        border-radius: 8px !important;
+        color: var(--text-main) !important;
+        padding: 12px 16px !important;
+        font-size: 0.9rem !important;
+        transition: border-color 0.2s !important;
+        width: 100%;
+        margin-bottom: 14px;
+        display: block;
+      }
+      .cf-input:focus {
+        border-color: rgba(0, 240, 255, 0.4) !important;
+        outline: none !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+      }
+      .cf-input::placeholder {
+        color: var(--text-muted) !important;
+      }
+      .socials {
+        display: flex;
+        gap: 12px;
+        margin-top: 24px;
+      }
+      .social-a {
+        width: 42px;
+        height: 42px;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-muted);
+        font-size: 1rem;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+      .social-a:hover {
+        border-color: rgba(0, 240, 255, 0.4);
+        color: var(--primary);
+        transform: translateY(-2px);
+        text-decoration: none;
+      }
+
+      /* FOOTER */
+      .footer-wrap {
+        background: #070a14;
+        border-top: 1px solid var(--border);
+        padding: 50px 0 30px;
+      }
+      .footer-logo-a {
+        font-family: "Syne", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--primary);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 14px;
+      }
+      .footer-copy {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        text-align: center;
+      }
+      .footer-link {
+        color: var(--text-muted);
+        text-decoration: none;
+        font-size: 0.88rem;
+        display: block;
+        margin-bottom: 10px;
+        transition: color 0.2s;
+      }
+      .footer-link:hover {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      /* SCROLL */
+      .scroll-ind {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+      .scroll-d {
+        width: 6px;
+        height: 20px;
+        border: 1px solid rgba(0, 240, 255, 0.3);
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+      .scroll-d::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        background: var(--primary);
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        animation: scrolld 1.8s ease infinite;
+      }
+      @keyframes scrolld {
+        0% {
+          top: 0;
+          opacity: 1;
+        }
+        100% {
+          top: 100%;
+          opacity: 0;
+        }
+      }
+      .scroll-t {
+        font-size: 0.7rem;
+        color: var(--text-muted);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: 40px;
+        }
+        .hero-img-wrap {
+          order: -1;
+        }
+        .hero-ring {
+          width: 220px;
+          height: 220px;
+        }
+        .hero-btns {
+          justify-content: center;
+        }
+        .hero-desc {
+          margin: 0 auto 36px;
+        }
+        .hero-tag {
+          margin: 0 auto 20px;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .stats-inner {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      #ftco-loader {
+        background: var(--bg-dark);
+      }
+      #ftco-loader .circular .path {
+        stroke: var(--primary);
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light site-navbar-target fixed-top"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">IM.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+        >
+          <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills-section" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects-section" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services-section" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home-section">
+      <div class="hero-glow1"></div>
+      <div class="hero-glow2"></div>
+      <div class="hero-grid">
+        <div>
+          <div class="hero-tag">Available for opportunities</div>
+          <h1 class="hero-name">Hi, I'm<br /><span>Isaac Masila</span></h1>
+          <p class="hero-roles">
+            <strong>Data Scientist</strong> &middot;
+            <strong>ML Engineer</strong> &middot;
+            <strong>Full-Stack Developer</strong><br />based in
+            <strong>Nairobi, Kenya &#x1F1F0;&#x1F1EA;</strong>
+          </p>
+          <p class="hero-desc">
+            Building AI-powered solutions that scale. From predictive models and
+            FinTech apps to cross-platform mobile experiences &mdash; I turn
+            data into decisions and ideas into products.
+          </p>
+          <div class="hero-btns">
+            <a
+              href="https://docs.google.com/document/d/1dMQg1EPiO5YZ6i7Aci_ehQgbpFVC5A4de8gTsGFaGm4/edit?usp=sharing"
+              target="_blank"
+              class="btn-glow"
+              >Download CV</a
+            >
+            <a href="#contact-section" class="btn-outline-glow">Hire Me</a>
+          </div>
+        </div>
+        <div class="hero-img-wrap">
+          <div class="hero-ring">
+            <div class="hero-img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-ind">
+        <div class="scroll-d"></div>
+        <span class="scroll-t">Scroll</span>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="stats-inner">
+          <div>
+            <div class="stat-num" data-number="29">0</div>
+            <div class="stat-lbl">GitHub Repos</div>
+          </div>
+          <div>
+            <div class="stat-num" data-number="4">0</div>
+            <div class="stat-lbl">ML Projects</div>
+          </div>
+          <div>
+            <div class="stat-num" data-number="5">0</div>
+            <div class="stat-lbl">Certifications</div>
+          </div>
+          <div>
+            <div class="stat-num" data-number="21">0</div>
+            <div class="stat-lbl">GitHub Followers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="sec" id="about-section">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Get to know me</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-img-wrap">
+            <img src="images/Mine.JPG" alt="Isaac Masila" />
+            <div class="about-badge">
+              <div class="n">2+</div>
+              <div class="l">Years Coding</div>
+            </div>
+          </div>
+          <div>
+            <p class="about-text">
+              I'm a
+              <strong style="color: #fff"
+                >Data Scientist, Quantitative Analyst, and Full-Stack
+                Developer</strong
+              >
+              passionate about building AI-powered solutions that make a
+              real-world impact. My motto:
+              <em style="color: var(--primary)"
+                >"If data is the new oil, I'm building the refinery."</em
+              >
+            </p>
+            <p class="about-text" style="margin-top: 14px">
+              I blend technical expertise in Python, ML, and cloud architecture
+              with creative UI/UX and mobile development. Currently exploring
+              <strong style="color: #fff"
+                >MLOps, Algorithmic Trading, and Quantitative Finance</strong
+              >
+              &mdash; always building, always learning.
+            </p>
+            <div class="info-grid">
+              <div class="info-item">
+                <div class="k">Full Name</div>
+                <div class="v">Isaac Mbusya Masila</div>
+              </div>
+              <div class="info-item">
+                <div class="k">Date of Birth</div>
+                <div class="v">January 26, 2006</div>
+              </div>
+              <div class="info-item">
+                <div class="k">Location</div>
+                <div class="v">Nairobi, Kenya &#x1F1F0;&#x1F1EA;</div>
+              </div>
+              <div class="info-item">
+                <div class="k">Email</div>
+                <div class="v">
+                  <a
+                    href="mailto:mbusyaisaac@gmail.com"
+                    style="color: var(--primary); text-decoration: none"
+                    >mbusyaisaac@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="k">Phone</div>
+                <div class="v">+254 795 195 136</div>
+              </div>
+              <div class="info-item">
+                <div class="k">Availability</div>
+                <div class="v" style="color: #4ade80">
+                  &#x2713; Open to Work
+                </div>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Flutter</span
+              ><span class="tag">TensorFlow</span><span class="tag">Django</span
+              ><span class="tag">Node.js</span><span class="tag">AWS</span
+              ><span class="tag">PostgreSQL</span><span class="tag">React</span>
+            </div>
+            <div style="margin-top: 28px">
+              <a
+                href="https://docs.google.com/document/d/1dMQg1EPiO5YZ6i7Aci_ehQgbpFVC5A4de8gTsGFaGm4/edit?usp=sharing"
+                target="_blank"
+                class="btn-glow"
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="sec-alt" id="resume-section">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">My Journey</span>
+          <h2>Education &amp; Experience</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 30px;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+              "
+            >
+              Education
+            </h4>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-date">2024</div>
+                <div class="tl-title">
+                  Certificate in Computer Programming &amp; Web Development
+                </div>
+                <div class="tl-inst">Tunapanda Institute, Kibra</div>
+                <div class="tl-desc">
+                  Intensive training in programming fundamentals, web
+                  development, and tech skills with a focus on social impact for
+                  underserved communities.
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-date">2019 &ndash; 2023</div>
+                <div class="tl-title">
+                  Kenya Certificate of Secondary Education (KCSE)
+                </div>
+                <div class="tl-inst">
+                  St. Patrick's Secondary School &ndash; Makunga
+                </div>
+                <div class="tl-desc">
+                  Strong academic foundation. Began exploring programming and
+                  computing during this period.
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-date">2011 &ndash; 2019</div>
+                <div class="tl-title">
+                  Kenya Certificate of Primary Education (KCPE)
+                </div>
+                <div class="tl-inst">Valley View Academy</div>
+                <div class="tl-desc">
+                  Attained a top score in the KCPE exam, demonstrating strong
+                  early academic performance.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 30px;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+              "
+            >
+              Experience
+            </h4>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-date">2024 &ndash; Present</div>
+                <div class="tl-title">
+                  Freelance Data Scientist &amp; App Developer
+                </div>
+                <div class="tl-inst">Independent / Remote</div>
+                <div class="tl-desc">
+                  Building ML models, Flutter applications, and full-stack web
+                  solutions for clients. Specializing in data analysis,
+                  predictive modeling, and cloud-deployed apps.
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-date">2019 &ndash; 2024</div>
+                <div class="tl-title">
+                  Part-time Programmer &amp; Private Tutor
+                </div>
+                <div class="tl-inst">Gateway Digital Solutions, Kitale</div>
+                <div class="tl-desc">
+                  Taught programming fundamentals, developed client projects,
+                  and mentored students in tech skills. Delivered customized
+                  learning plans and built lasting client relationships.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px">
+          <a
+            href="https://docs.google.com/document/d/1dMQg1EPiO5YZ6i7Aci_ehQgbpFVC5A4de8gTsGFaGm4/edit?usp=sharing"
+            target="_blank"
+            class="btn-glow"
+            >Download Full CV</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="sec" id="skills-section">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">What I work with</span>
+          <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-name">
+              Python<span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              HTML / CSS<span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              Flutter / Dart<span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              Machine Learning<span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              SQL / PostgreSQL<span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              TensorFlow / Keras<span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              Django / Node.js<span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 78%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              JavaScript / TS<span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              AWS / Cloud<span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              Data Visualization<span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              Git / DevOps<span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 82%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-name">
+              Video Editing<span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="sec-alt" id="projects-section">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">What I've built</span>
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="proj-grid">
+          <div class="proj-card">
+            <div class="proj-ico">&#x1F4B3;</div>
+            <div class="proj-title">SmartPay Billing System</div>
+            <div class="proj-desc">
+              Real-time water and electricity billing platform with AWS cloud
+              deployment. Production-ready full-stack solution for utility
+              providers.
+            </div>
+            <div class="proj-impact">&#x1F680; Production Deployed on AWS</div>
+            <div class="stack-tags">
+              <span class="stack-tag">Flutter</span
+              ><span class="stack-tag">Node.js</span
+              ><span class="stack-tag">PostgreSQL</span
+              ><span class="stack-tag">AWS</span
+              ><span class="stack-tag">Dart</span>
+            </div>
+            <a
+              href="https://github.com/Masila-Isaac/Smartpay-Billing-system-"
+              target="_blank"
+              class="proj-link"
+              >View on GitHub &rarr;</a
+            >
+          </div>
+          <div class="proj-card">
+            <div class="proj-ico">&#x1F916;</div>
+            <div class="proj-title">Predictive Dropout Model</div>
+            <div class="proj-desc">
+              ML-powered student retention prediction system using Keras and
+              scikit-learn. Identifies at-risk students to improve institutional
+              support.
+            </div>
+            <div class="proj-impact">&#x1F3AF; 92% Prediction Accuracy</div>
+            <div class="stack-tags">
+              <span class="stack-tag">Python</span
+              ><span class="stack-tag">Keras</span
+              ><span class="stack-tag">scikit-learn</span
+              ><span class="stack-tag">Pandas</span>
+            </div>
+            <a
+              href="https://github.com/Masila-Isaac/Predictive-Droupout-Model"
+              target="_blank"
+              class="proj-link"
+              >View on GitHub &rarr;</a
+            >
+          </div>
+          <div class="proj-card">
+            <div class="proj-ico">&#x270B;</div>
+            <div class="proj-title">Hand Gesture Detector</div>
+            <div class="proj-desc">
+              Computer vision project using MediaPipe for gesture-controlled
+              presentation navigation &mdash; enabling professional, touchless
+              slide control.
+            </div>
+            <div class="proj-impact">
+              &#x1F441;&#xFE0F; Computer Vision &middot; MediaPipe
+            </div>
+            <div class="stack-tags">
+              <span class="stack-tag">Python</span
+              ><span class="stack-tag">MediaPipe</span
+              ><span class="stack-tag">OpenCV</span>
+            </div>
+            <a
+              href="https://github.com/Masila-Isaac/HandGuestureDetector"
+              target="_blank"
+              class="proj-link"
+              >View on GitHub &rarr;</a
+            >
+          </div>
+          <div class="proj-card">
+            <div class="proj-ico">&#x1F326;&#xFE0F;</div>
+            <div class="proj-title">MimWeathers App</div>
+            <div class="proj-desc">
+              Real-time weather forecasting Flutter app with geolocation
+              integration, REST APIs, and Provider state management. Clean
+              mobile-first UI.
+            </div>
+            <div class="proj-impact">&#x1F4F1; Cross-platform Mobile App</div>
+            <div class="stack-tags">
+              <span class="stack-tag">Flutter</span
+              ><span class="stack-tag">REST APIs</span
+              ><span class="stack-tag">Provider</span
+              ><span class="stack-tag">Dart</span>
+            </div>
+            <a
+              href="https://github.com/Masila-Isaac/MimWeathers"
+              target="_blank"
+              class="proj-link"
+              >View on GitHub &rarr;</a
+            >
+          </div>
+          <div class="proj-card">
+            <div class="proj-ico">&#x1F3E2;</div>
+            <div class="proj-title">Dencrib &ndash; Business Platform</div>
+            <div class="proj-desc">
+              Modern, responsive business services web platform. Mobile-first
+              design with HTML5, CSS3, JavaScript, and Bootstrap.
+            </div>
+            <div class="proj-impact">&#x1F310; Responsive Web Design</div>
+            <div class="stack-tags">
+              <span class="stack-tag">HTML5</span
+              ><span class="stack-tag">CSS3</span
+              ><span class="stack-tag">JavaScript</span
+              ><span class="stack-tag">Bootstrap</span>
+            </div>
+            <a
+              href="https://github.com/Masila-Isaac/Group10"
+              target="_blank"
+              class="proj-link"
+              >View on GitHub &rarr;</a
+            >
+          </div>
+          <div class="proj-card">
+            <div class="proj-ico">&#x2615;</div>
+            <div class="proj-title">Java-MySQL Connector</div>
+            <div class="proj-desc">
+              Clean Java-MySQL integration demonstrating JDBC connectivity and
+              CRUD operations &mdash; a solid backend database engineering
+              project.
+            </div>
+            <div class="proj-impact">&#x1F50C; Full JDBC Integration</div>
+            <div class="stack-tags">
+              <span class="stack-tag">Java</span
+              ><span class="stack-tag">MySQL</span
+              ><span class="stack-tag">JDBC</span>
+            </div>
+            <a
+              href="https://github.com/Masila-Isaac/Java-Database-connectivity"
+              target="_blank"
+              class="proj-link"
+              >View on GitHub &rarr;</a
+            >
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px">
+          <a
+            href="https://github.com/Masila-Isaac?tab=repositories"
+            target="_blank"
+            class="btn-outline-glow"
+            >View All 29 Repositories &rarr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="sec">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Credentials</span>
+          <h2>Certifications</h2>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-ico">&#x1F3E6;</div>
+            <div>
+              <div class="cert-name">Market Quantitative Analysis</div>
+              <div class="cert-by">Citi</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-ico">&#x1F3E6;</div>
+            <div>
+              <div class="cert-name">Quantitative Research Program</div>
+              <div class="cert-by">JPMorgan Chase</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-ico">&#x1F4CA;</div>
+            <div>
+              <div class="cert-name">Data Science Program</div>
+              <div class="cert-by">BCGx (Boston Consulting Group)</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-ico">&#x1F3AF;</div>
+            <div>
+              <div class="cert-name">Data Science Virtual Internship</div>
+              <div class="cert-by">Codveda</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-ico">&#x1F4BB;</div>
+            <div>
+              <div class="cert-name">Software Engineering</div>
+              <div class="cert-by">PLP (Power Learn Project)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="sec-alt" id="services-section">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">What I offer</span>
+          <h2>Services</h2>
+        </div>
+        <div class="svc-grid">
+          <div class="svc-card">
+            <div class="svc-ico">&#x1F916;</div>
+            <div class="svc-title">AI &amp; ML Development</div>
+            <div class="svc-desc">
+              Predictive models, classification systems, and data pipelines
+              using TensorFlow, Keras, and scikit-learn.
+            </div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-ico">&#x1F4F1;</div>
+            <div class="svc-title">Mobile App Development</div>
+            <div class="svc-desc">
+              Cross-platform apps with Flutter &amp; Dart &mdash; clean UI,
+              smooth UX, Firebase and REST API integration.
+            </div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-ico">&#x1F310;</div>
+            <div class="svc-title">Web Development</div>
+            <div class="svc-desc">
+              Full-stack web apps with Django, Node.js, and React. Responsive
+              design, REST APIs, and database architecture.
+            </div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-ico">&#x1F4CA;</div>
+            <div class="svc-title">Data Analysis &amp; Visualization</div>
+            <div class="svc-desc">
+              Cleaning, analyzing, and visualizing complex datasets with Python
+              (Pandas, NumPy, Matplotlib, Seaborn).
+            </div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-ico">&#x2601;&#xFE0F;</div>
+            <div class="svc-title">Cloud Deployment (AWS)</div>
+            <div class="svc-desc">
+              Deploying production-ready apps on AWS &mdash; EC2, S3, RDS
+              &mdash; with scalable and reliable architecture.
+            </div>
+          </div>
+          <div class="svc-card">
+            <div class="svc-ico">&#x1F393;</div>
+            <div class="svc-title">Tech Tutoring &amp; Mentoring</div>
+            <div class="svc-desc">
+              Teaching Python, web development, and data science. Personalized
+              learning plans for all levels.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec" id="contact-section">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Let's talk</span>
+          <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.95rem;
+                line-height: 1.8;
+                margin-bottom: 28px;
+              "
+            >
+              Whether you have a project idea, a collaboration opportunity, or
+              just want to say hello &mdash; I'd love to hear from you. Open to
+              new challenges in AI, data science, and tech.
+            </p>
+            <div class="contact-card">
+              <div class="contact-ico">&#x1F4CD;</div>
+              <div>
+                <div class="contact-lbl">Location</div>
+                <div class="contact-val">Nairobi, Kenya</div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-ico">&#x1F4DE;</div>
+              <div>
+                <div class="contact-lbl">Phone</div>
+                <div class="contact-val">
+                  <a href="tel:+254795195136">+254 795 195 136</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-ico">&#x2709;&#xFE0F;</div>
+              <div>
+                <div class="contact-lbl">Email</div>
+                <div class="contact-val">
+                  <a href="mailto:mbusyaisaac@gmail.com"
+                    >mbusyaisaac@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="socials">
+              <a
+                href="https://github.com/Masila-Isaac"
+                target="_blank"
+                class="social-a"
+                title="GitHub"
+                ><span class="icon-github"></span
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/isaac-masila-6266752b8/"
+                target="_blank"
+                class="social-a"
+                title="LinkedIn"
+                ><span class="icon-linkedin"></span
+              ></a>
+              <a
+                href="https://www.instagram.com/zosqa_king/"
+                target="_blank"
+                class="social-a"
+                title="Instagram"
+                ><span class="icon-instagram"></span
+              ></a>
+              <a
+                href="mailto:mbusyaisaac@gmail.com"
+                class="social-a"
+                title="Email"
+                ><span class="icon-envelope"></span
+              ></a>
+            </div>
+          </div>
+          <div class="cf-wrap">
+            <h4
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 24px;
+              "
+            >
+              Send a Message
+            </h4>
+            <form action="#" method="post">
+              <input
+                type="text"
+                class="cf-input"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                class="cf-input"
+                placeholder="Your Email"
+                required
+              />
+              <input type="text" class="cf-input" placeholder="Subject" />
+              <textarea
+                class="cf-input"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="btn-glow"
+                style="
+                  width: 100%;
+                  display: block;
+                  text-align: center;
+                  cursor: pointer;
+                "
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="index.html" class="footer-logo-a">IM.</a>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+                max-width: 280px;
+              "
+            >
+              Data Scientist &middot; ML Engineer &middot; Full-Stack Developer
+              building the future from Nairobi, Kenya.
+            </p>
+            <div class="socials" style="margin-top: 18px">
+              <a
+                href="https://github.com/Masila-Isaac"
+                target="_blank"
+                class="social-a"
+                ><span class="icon-github"></span
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/isaac-masila-6266752b8/"
+                target="_blank"
+                class="social-a"
+                ><span class="icon-linkedin"></span
+              ></a>
+              <a
+                href="https://www.instagram.com/zosqa_king/"
+                target="_blank"
+                class="social-a"
+                ><span class="icon-instagram"></span
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h6
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                font-size: 0.85rem;
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 18px;
+              "
+            >
+              Links
+            </h6>
+            <a href="#home-section" class="footer-link">Home</a>
+            <a href="#about-section" class="footer-link">About</a>
+            <a href="#projects-section" class="footer-link">Projects</a>
+            <a href="#contact-section" class="footer-link">Contact</a>
+          </div>
+          <div class="col-md-3">
+            <h6
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                font-size: 0.85rem;
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 18px;
+              "
+            >
+              Services
+            </h6>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--text-muted);
+                margin-bottom: 8px;
+              "
+            >
+              AI &amp; ML Development
+            </p>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--text-muted);
+                margin-bottom: 8px;
+              "
+            >
+              Mobile App Development
+            </p>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--text-muted);
+                margin-bottom: 8px;
+              "
+            >
+              Web Development
+            </p>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--text-muted);
+                margin-bottom: 0;
+              "
+            >
+              Data Analysis
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h6
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                font-size: 0.85rem;
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 18px;
+              "
+            >
+              Contact
+            </h6>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--text-muted);
+                margin-bottom: 8px;
+              "
+            >
+              &#x1F4CD; Nairobi, Kenya
+            </p>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--text-muted);
+                margin-bottom: 8px;
+              "
+            >
+              &#x1F4DE; +254 795 195 136
+            </p>
+            <p style="font-size: 0.88rem; margin-bottom: 0">
+              <a
+                href="mailto:mbusyaisaac@gmail.com"
+                style="color: var(--primary); text-decoration: none"
+                >mbusyaisaac@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-copy">
+          &copy; 2025 Isaac Mbusya Masila &middot; Built with passion from
+          Nairobi, Kenya &#x1F1F0;&#x1F1EA;
+        </div>
+      </div>
+    </footer>
+
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#1a1a2e"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#00F0FF"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animated counters
+        const nums = document.querySelectorAll(".stat-num[data-number]");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseInt(el.getAttribute("data-number"));
+                let current = 0;
+                const step = Math.max(1, target / 40);
+                const timer = setInterval(() => {
+                  current += step;
+                  if (current >= target) {
+                    el.textContent = target + "+";
+                    clearInterval(timer);
+                  } else el.textContent = Math.floor(current);
+                }, 40);
+                observer.unobserve(el);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+        nums.forEach((n) => observer.observe(n));
+
+        // Active nav on scroll
+        const sections = document.querySelectorAll("section[id]");
+        const links = document.querySelectorAll(".ftco_navbar .nav-link");
+        window.addEventListener("scroll", () => {
+          let curr = "";
+          sections.forEach((s) => {
+            if (window.pageYOffset >= s.offsetTop - 120) curr = s.id;
+          });
+          links.forEach((l) => {
+            l.classList.remove("active");
+            if (l.getAttribute("href") === "#" + curr)
+              l.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
